@@ -27,10 +27,7 @@
             localOffset = localdate.getTimezoneOffset() * 60000;
             utcTime = localTime + localOffset;
             var date = new Date(utcTime);
-            var year = date.getFullYear();
-            var month = date.getMonth() + 1;
-            var day = date.getDate();
-            document.write("<param name='filter' value='Date Patram="+year+'-'+month+'-'+day+"' />");
+            document.write("<param name='filter' value='Date Patram=" + date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + "' />");
         </script>
         <param name='tabs' value='yes' />
         <param name='toolbar' value='false' />
